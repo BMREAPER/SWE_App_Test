@@ -24,6 +24,9 @@
     <ClCompile Include="..\calculator-chris-BMREAPER\SWE_App\Processor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\calculator-chris-BMREAPER\SWE_App\ButtonFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

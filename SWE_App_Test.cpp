@@ -152,32 +152,51 @@ public:
 		TEST_CLASS(Buttoons) {
 
 			TEST_METHOD(CREATEADDITION) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateAddition(panel, 1);
+	
 			}
 
 			TEST_METHOD(CREATESUBTRACT) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateSubtracion(panel, 1);
 			}
 			TEST_METHOD(CREATEMULTIPLY) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateMultiplication(panel, 1);
 			}
 			TEST_METHOD(CREATEDIVIDE) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateDivision(panel, 1);
 			}
 			TEST_METHOD(CREATEMODULO) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateModulo(panel, 1);
 			}
 			TEST_METHOD(CREATESIN) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateSin(panel, 1);
 			}
 			TEST_METHOD(CREATEADDITIONCOS) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateCos(panel, 1);
 			}
 			TEST_METHOD(CREATETAN) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateTan(panel, 1);
 			}
 			TEST_METHOD(CREATEBUTTON) {
-
+				ButtonFactory Tester;
+				wxPanel* panel = new wxPanel;
+				Tester.CreateButtons("exb" , panel, 1);
 			}
 
 
