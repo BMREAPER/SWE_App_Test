@@ -154,8 +154,7 @@ public:
 			TEST_METHOD(CREATEADDITION) {
 				ButtonFactory Tester;
 				wxPanel* panel = new wxPanel;
-				Tester.CreateAddition(panel, 1);
-	
+				wxButton* btn = Tester.CreateAddition(panel, 1);
 			}
 
 			TEST_METHOD(CREATESUBTRACT) {
@@ -177,6 +176,7 @@ public:
 				ButtonFactory Tester;
 				wxPanel* panel = new wxPanel;
 				Tester.CreateModulo(panel, 1);
+
 			}
 			TEST_METHOD(CREATESIN) {
 				ButtonFactory Tester;
