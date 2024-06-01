@@ -153,71 +153,103 @@ public:
 
 			TEST_METHOD(CREATEADDITION) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateAddition(panel, 1);
-				const char Operators = btn->GetLabel().ToStdString()[0];
+				const char Operators = btn->GetLabel()[0];
 				Assert::AreEqual('+', Operators, L"Create Addition has failed");
+				delete panel;
+				delete parent;
+
 			}
 
 			TEST_METHOD(CREATESUBTRACT) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateSubtracion(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('-', Operators, L"Create Subtract has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATEMULTIPLY) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateMultiplication(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
-				Assert::AreEqual('*', Operators, L"Create Multiply has failed");
+				Assert::AreEqual('x', Operators, L"Create Multiply has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATEDIVIDE) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateDivision(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('/', Operators, L"Create Divide has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATEMODULO) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateModulo(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('%', Operators, L"Create Modulo has failed");
+				delete panel;
+				delete parent;
 
 			}
 			TEST_METHOD(CREATESIN) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateSin(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('s', Operators, L"Create sin has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATeCOS) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateCos(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('c', Operators, L"Create cos has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATETAN) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateTan(panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('t', Operators, L"Create tan has failed");
+				delete panel;
+				delete parent;
 			}
 			TEST_METHOD(CREATEBUTTON) {
 				ButtonFactory Tester;
-				wxPanel* panel = new wxPanel;
+				wxFrame* parent = new wxFrame(NULL, wxID_ANY, "Test Frame");
+				wxPanel* panel = new wxPanel(parent, wxID_ANY);
 				wxButton* btn = Tester.CreateButtons("e" , panel, 1);
 				const char Operators = btn->GetLabel().ToStdString()[0];
 				Assert::AreEqual('e', Operators, L"Create Button has failed");
+				delete panel;
+				delete parent;
 			}
 
+			TEST_METHOD(CLEAR) {
 
+
+
+			}
 
 
 
