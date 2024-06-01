@@ -245,15 +245,7 @@ public:
 				delete parent;
 			}
 
-			TEST_METHOD(CLEAR) {
-
-
-
-			}
-
-
-
-
+		
 		};
 
 
